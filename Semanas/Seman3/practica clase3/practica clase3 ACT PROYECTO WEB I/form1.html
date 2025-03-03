@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />	
+<title>Desarrollo Web</title>
+<link href="imagenes/favicon.png" rel="icon">
+</head>
+
+<body>
+<header>
+    <h1>Formulario de Contacto</h1>
+</header>
+<hr>
+
+<section>
+<!--Creamos el formulario-->
+<form method="post">
+<!--Escenario de controles de leyenda-->
+<fieldset>
+    <legend><h2>Información personal:</h2></legend>
+    <br>
+    <!--etiqueta-->
+    <h3><label>Nombre:</label></h3>
+    <!--Campo de entrada-->
+    <input name="nom" type="text" maxlength="15" size="30" placeholder="Escriba su nombre completo" required>
+
+    <br><br>
+    <h3><label>Apellidos:</label></h3>
+    <input name="ape" type="text" maxlength="15" size="30" placeholder="Escriba sus apellidos completos" required>
+
+    <br><br>
+    <h3><label>Correo:</label></h3>
+    <input name="cor" type="email" placeholder="Formato del email: nombre@dominio.com" required>
+
+<!--Radio Button-->
+    <h3>Escoja de esta lista su color preferido</h3>
+    <input name="color" type="radio" value="azul"> Azul<br>
+    <input name="color" type="radio" value="blanco"> Blanco<br>
+    <input name="color" type="radio" value="Negro"> Negro<br>
+
+
+    <!--Checkbox-->
+    <h3>Escoja sus frutas favoritas</h3>
+    <input name="fruta1" type="checkbox" value="Uvas"> Uvas<br>
+    <input name="fruta2" type="checkbox" value="Freas"> Fresas<br>
+    <input name="fruta3" type="checkbox" value="Manzanas"> Manzanas<br>
+
+    <!--Combo-->
+    <h3>Elija su estado civil</h3>
+    <select name="Estado civil">
+    <option value="S">Soltero(a)</option>
+    <option value="C">Casado(a)</option>
+    <option value="D">Divorciado(a)</option>
+    <option value="V">Viudo(a)</option>
+    </select>
+
+    
+    <br><br>
+    <h3><label>Mensaje:</label></h3>
+    <!--Cuadro de comentario-->
+    <textarea name="com" rows="10" cols="50" placeholder="Escriba su mensaje" required></textarea>
+
+    <br><br><br>
+    <!-- Botones -->
+    <input name="enviar" type="submit" value="Enviar">
+    <input name="borrar" type="reset" value="Borrar">
+</fieldset>
+</section>
+
+<br><br>
+
+
+<footer>
+    <h3>Es un gusto atenderle en cualquier momento...</h3>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

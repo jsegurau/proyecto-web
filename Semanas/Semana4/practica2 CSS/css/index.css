@@ -1,0 +1,62 @@
+/*Selector Universal siempre se inicia con el*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*contenedor*/
+.contenedor {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #e4e4e4;
+}
+
+header {
+    background-color: #016aea;
+}
+
+footer {
+    background-color: #016aea;
+}
+
+header h1 {
+    /*padding-top: 80px;
+    padding-bottom: 80px;
+    top der botton izq*/
+    padding: 80px 0px 80px 0px;
+    /*padding: 80px 80px;*/
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+footer h2 {
+    padding: 60px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #016aea;
+    /*margenizquierdo*/
+    margin: 100px; 
+}
+
+
+
+
+
+
+
+
+
+
+
