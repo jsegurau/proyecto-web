@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Interfaz Web</title>
+    <meta charset="utf-8">
+    <link href="imagenes/favicon.png" rel="icon">      
+    <link href="css/index.css" rel="stylesheet">    
+  </head>  
+
+  <body>
+
+    <section class="bannerweb configform2">
+
+    <!-- formulario de acceso -->
+
+    <!--con esta linea permitimos o denegar el envio del formulario si pusimos bien o mal los datos de ingreso-->
+      <form onsubmit="return validarLogin()">
+      <fieldset>
+        <legend><h3 class="color1">Identificación</h3></legend>
+      <div class="centrado">            
+          <div class="centrado bajar2">
+            <label class="" for="in-txt-user">Usuario:</label>
+            <input class="form-control" id="in-txt-user" type="text" placeholder="Ingrese su usuario">
+          </div>
+          <div class="centrado bajar2">
+            <label class="" for="in-txt-pass">Contraseña:</label>
+
+            <!--campo contraseña definido como tipo password-->
+            <input class="form-control" id="in-txt-pass" type="password" placeholder="Ingrese su contraseña">
+          </div>          
+            <div class="centrado bajar2">
+          
+            <!-- aqui va la programacion para ir a la página web landing.html -->
+              <!--<a class="botones" id="btn-login">Entrar</a>   
+              <a class="botones" id="btn-login" onclick="limpiar()">Limpiar</a>-->
+            
+              <!--usamos esta linea para que no el usuario tenga que validar su ingreso-->
+              <button type="submit" class="botones">Entrar</button>
+              
+          </div>
+
+      </div><br><br>     
+    </fieldset>
+    </form>
+    </section>
+    
+    <!-- aqui va la programacion JS -->
+    
+
+    <!-- cargas CDN desplegables y microinteracciones -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+    
+    <!--agregamos la validacion del loggin con la contraseña pedida-->
+    <script>
+      function validarLogin() {
+        
+        /*Realizamos la captura de los imputs que contienen usuario y contraseña*/
+        let usuario = document.getElementById("in-txt-user").value;
+        let contraseña = document.getElementById("in-txt-pass").value;
+
+        /*Cotejamos que los compos usuario y contraseña sean validos*/
+        if (usuario === "Cenfo" && contraseña === "123") {
+          
+          /*con esta linea rederigimos a landing si logueamos bien*/
+          window.location.href = "landing.html"
+          return false;
+
+        } else {
+          alert("Usuario y/o Contraseña invalidos")
+        }
+
+      }
+    </script>
+
+  </body>
+</html>  
