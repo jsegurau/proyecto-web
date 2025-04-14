@@ -20,6 +20,15 @@ infospot1.element.innerHTML =
 panorama.add(infospot1);
 
 
+//Infospot Teclado Caracteristicas
+var infospot1 = new PANOLENS.Infospot(50, "imagenes/infoico2.png");
+infospot1.position.set(50, -214, -500);
+infospot1.addHoverText("",-100);
+infospot1.element.innerHTML = 
+    '<div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; border-radius: 25px; ' +
+    'padding: 10px; font-size: 16px; width: 500px;">' + 'Teclado clásico de oficina, cómodo y fácil de usar. Conexión USB y diseño estándar ideal para el trabajo diario. ' + '</div>';
+panorama.add(infospot1);
+
 
 // Crea y agrega el infospot 2 Video
 var infospot2 = new PANOLENS.Infospot(60, "imagenes/videoico.png");
@@ -58,22 +67,49 @@ panorama.add(infospot4);
 
 
 
+
+
+
 // Infospot 5 Audio
 var infospot5 = new PANOLENS.Infospot(50, "imagenes/audioico.png");
-infospot5.position.set(499, -277, 108);
+infospot5.position.set(500, 60, -232);
 infospot5.addHoverText('', -60);
 infospot5.element.innerHTML = '<div style="color:#000; border-radius: 5px; padding: 10px; font-size: 14px; width: 200px;"><audio controls><source src="audios/360mp3.mp3" type="audio/mpeg"></audio></div>';
 panorama.add(infospot5);
 
+
+// Infospot Planta
+var infospot6 = new PANOLENS.Infospot(60, 'imagenes/infoico3.png');
+infospot6.position.set(499, -174, 435);
+infospot6.addHoverText('', -200);
+infospot6.element.innerHTML = `
+    <div style="background-color: rgb(8, 5, 82); color:#fff; border-radius: 25px; padding: 10px; font-size: 18px; width: 250px;">
+        El pasto cola de zorro es una gramínea ornamental de follaje denso y espigas plumosas. Se usa en jardinería y decoración por su elegancia y bajo mantenimiento. Ideal para interiores.(NO TOCAR)<br><br>
+        <img src="imagenes/notocar.png" alt="Imagen del dispositivo" style="max-width: 100%; height: auto; border-radius: 5px;">
+        <br><br>
+    </div>`;
+panorama.add(infospot6);
+
+
  
-// Crea y agrega el promospot1
-var promospot1 = new PANOLENS.Infospot(50, 'imagenes/promoico.png');
+// Promospot Xiaomi TB
+var promospot1 = new PANOLENS.Infospot(50, 'imagenes/ofertaico.png');
 promospot1.position.set(263, 65, -500);
 promospot1.addHoverText('', -120);
 promospot1.element.innerHTML = 
   '<div style="background-color: transparent;">' + 
   '<img src="imagenes/xiaomi499.png" style="max-width: 250px; height: auto;"></div>';
 panorama.add(promospot1);
+
+
+// Promospot Teclado 30usd
+var promospot2 = new PANOLENS.Infospot(50, 'imagenes/ofertaico2.png');
+promospot2.position.set(-64, -236, -500);
+promospot2.addHoverText('', -120);
+promospot2.element.innerHTML = 
+  '<div style="background-color: transparent;">' + 
+  '<img src="imagenes/kb30.png" style="max-width: 180px; height: auto;"></div>';
+panorama.add(promospot2);
 
 
 // Agrega la panorámica al visor con pantalla completa habilitada

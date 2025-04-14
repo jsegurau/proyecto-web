@@ -1,0 +1,50 @@
+body {
+    overflow-x: hidden;
+}
+    
+/*#container_principal {
+    height: 100%;    
+    /*width: 2000px;
+    height: 1080px;}*/
+
+
+.cursor {
+    cursor: pointer;
+}
+
+header {
+    padding: 20px;
+    width: 100%;
+} 
+footer {
+    padding: 20px;        
+}
+    header h3 {
+    text-align: center;
+}
+    footer h2 {
+    text-align: center;
+}
+.fondo {
+    background-color: #000000;
+}
+
+.botones {
+    width: 150px;
+    height: 30px;
+    border: 3px solid #070707;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    /*espaciado*/
+    padding: 6px 35px;
+    /*quita subrayado*/
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #1570cd;
+    transition: all linear 0.2s;
+    /*forma del boton redondeado*/
+    border-radius: 10px;
+}
